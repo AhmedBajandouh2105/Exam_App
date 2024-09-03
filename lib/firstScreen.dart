@@ -75,11 +75,11 @@ class FirstScreen extends StatelessWidget {
                     padding: EdgeInsets.all(16),
                     margin: EdgeInsets.only(top: 8,bottom: 12),
                     decoration: BoxDecoration(
-                      color: Colors.orange,
+                      color: Colors.orange[700],
                       borderRadius: BorderRadius.circular(16)
                     ),
                     child: SizedBox(
-                      height: 68,
+                      height: 50,
                       width: 350,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
