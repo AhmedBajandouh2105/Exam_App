@@ -98,7 +98,12 @@ class SecondScreen extends StatelessWidget {
                   _tabSection(context)
                 ],
               ),
-            ))
+            )),
+        Positioned(
+          top: 0,
+            left: 0,
+            right: 0,
+            child: AppBar(leading: Icon(Icons.arrow_back_ios_new),backgroundColor: Colors.transparent,elevation: 0,))
       ]),
     );
   }
