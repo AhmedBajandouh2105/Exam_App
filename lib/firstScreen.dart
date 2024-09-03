@@ -65,7 +65,7 @@ class FirstScreen extends StatelessWidget {
               height: MediaQuery.of(context).size.height - 180,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.grey[100],
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(32),
                       topRight: Radius.circular(32))),
