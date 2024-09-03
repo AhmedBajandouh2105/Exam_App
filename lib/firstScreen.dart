@@ -15,11 +15,11 @@ class FirstScreen extends StatelessWidget {
               children: [
                 Container(
                   color: Colors.redAccent,
-                  height: 200,
+                  height: 250,
                   width: MediaQuery.of(context).size.width,
                 ),
                 Positioned(
-                  right: -60,
+                  right: -80,
                   child: Container(
                     height: 300,
                     width: 300,
@@ -59,7 +59,7 @@ class FirstScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 170,
+            top: 180,
             child: Container(
               padding: EdgeInsets.all(8),
               height: MediaQuery.of(context).size.height - 180,
@@ -73,24 +73,36 @@ class FirstScreen extends StatelessWidget {
                 children: [
                   Container(
                     padding: EdgeInsets.all(16),
-                    margin: EdgeInsets.only(top: 8,bottom: 12),
+                    margin: EdgeInsets.only(top: 8, bottom: 12),
                     decoration: BoxDecoration(
-                      color: Colors.orange[700],
-                      borderRadius: BorderRadius.circular(16)
-                    ),
+                        color: Colors.orange[700],
+                        borderRadius: BorderRadius.circular(16)),
                     child: SizedBox(
-                      height: 50,
-                      width: 350,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                        Icon(Icons.info_outline,color: Colors.white,),
-                        Text("  Compaign Info",style: TextStyle(fontSize: 20,color: Colors.white),),
-                        Spacer(),
-                        Text("click here",style: TextStyle(color: Colors.white),),
-                        Icon(Icons.arrow_right_alt,color: Colors.white,)
-                      ],)
-                    ),
+                        height: 50,
+                        width: 350,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(
+                              Icons.info_outline,
+                              color: Colors.white,
+                            ),
+                            Text(
+                              "  Compaign Info",
+                              style:
+                                  TextStyle(fontSize: 20, color: Colors.white),
+                            ),
+                            Spacer(),
+                            Text(
+                              "click here",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Icon(
+                              Icons.arrow_right_alt,
+                              color: Colors.white,
+                            )
+                          ],
+                        )),
                   ),
                   SizedBox(
                     height: 514,
@@ -148,36 +160,39 @@ class FirstScreen extends StatelessWidget {
                                           MainAxisAlignment.center,
                                       children: [
                                         Text(
-                                          "Resturant",
+                                          "Resturant Name",
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold),
                                         ),
-                                        Text("aasdavavava\ndasdadada"),
+                                        Text("Yemeni Resturant\nfast food"),
                                         Row(
                                           children: [
                                             Icon(
                                               Icons.star,
-                                              color: Colors.orange[900],
+                                              color: Colors.orange[900],size: 16
                                             ),
                                             Icon(
                                               Icons.star,
-                                              color: Colors.orange[900],
+                                              color: Colors.orange[900],size: 16
                                             ),
                                             Icon(
                                               Icons.star,
-                                              color: Colors.orange[900],
+                                              color: Colors.orange[900],size: 16
                                             ),
                                             Icon(
                                               Icons.star_half,
-                                              color: Colors.orange[900],
+                                              color: Colors.orange[900],size: 16
                                             ),
-                                            Icon(Icons.star_outline),
-                                            SizedBox(width: 5,),
+                                            Icon(Icons.star_outline,color: Colors.orange[900],size: 16),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
                                             Icon(
-                                              Icons.thumb_up_alt_outlined,
-                                              color: Colors.grey,
+                                              Icons.access_time,
+                                              color: Colors.grey,size: 16
                                             ),
-                                            Text("50")
+                                            SizedBox(width: 4,),
+                                            Text("27",style: TextStyle(fontSize: 12),)
                                           ],
                                         )
                                       ],
